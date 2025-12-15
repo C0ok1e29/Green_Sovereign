@@ -1,0 +1,226 @@
+/* General Page Styling */
+body{
+    font-family: "Poppins", sans-serif;
+    background: #f7f3ee;
+    color: #5c4b41;
+}
+
+/* Back Button Styling */
+.back-btn {
+    position: fixed;
+    top: 20px; 
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #d4e6c3;
+    color: #4a4a3c;
+    text-decoration: none;
+    font-size: 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+    
+.back-btn:hover {
+    background-color: #c1d8ae;
+}
+.back-btn i{
+    color: #4a4a3c;
+}
+
+/* Container (Overall Layout) */
+.container{
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    min-height: 100vh;
+    margin: 0 auto; 
+    gap: 40px;
+}
+
+/* Login Box */
+.login-box{
+    background-color: #fffaf5;
+    padding: 40px;
+    width: 380px; 
+    max-width: 100%;
+    border-radius: 14px;
+    border: 2px solid #e6dfd6;
+    box-shadow: 0 6px 15px rgba(140, 120, 110, 0.15);
+    text-align: center; 
+    flex-shrink: 0; 
+}
+
+.login-box h2{
+    margin-bottom: 30px; 
+    font-size: 24px;
+    color: #5c4b41;
+    font-weight: normal;
+}
+
+/* Input Fields (Stacked labels/inputs) */
+.input-group{
+    text-align: left; 
+    margin-bottom: 20px; 
+    display: block; 
+}
+
+.input-group label{
+    font-size: 14px;
+    color: #7a6a5d;
+    display: block; 
+    margin-bottom: 5px; 
+    width: auto; 
+    padding-right: 0; 
+    text-align: left; 
+}
+
+.input-group input{
+    width: 100%; 
+    padding: 10px 10px; 
+    margin-top: 0; 
+    border: 1px solid #d8cfc6;
+    border-radius: 8px; 
+    background: #fdfaf7;
+    font-size: 14px;
+    color: #5c4b41;
+    outline: none;
+    transition: 0.2s ease;
+    height: auto; 
+    box-sizing: border-box; 
+}
+
+.input-group input:focus{
+    border-color: #c6b8a9;
+    box-shadow: 0 0 4px rgba(180, 160, 140, 0.3);
+}
+
+/* Submit Button */
+.submit-btn{
+    width: 100%; 
+    max-width: none; 
+    display: block; 
+    margin: 25px auto 15px auto; 
+    padding: 12px;
+    background: #d4e6c3;
+    color: #4a4a3c;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover{
+    background: #c1d8ae;
+}
+
+/* Sign Up Link */
+.signup-link{
+    margin-top: 15px;
+    font-size: 14px;
+    color: #7a6a5d;
+}
+
+.signup-link a{
+    color: #a88f79;
+    text-decoration: none;
+}
+
+.signup-link a:hover{
+    text-decoration: underline;
+}
+
+/* Image Placeholder Styling */
+.image-placeholder{
+    width: 500px;
+    height: 400px; 
+    background-color: #fcf8f5;
+    border: 3px dashed #a88f79;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-grow: 1; 
+}
+
+.image-placeholder img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 11px;
+}
+
+/* Tablet/Larger Mobile Screens (max-width: 992px) */
+@media (max-width: 992px){
+    .container{
+        flex-direction: column; 
+        justify-content: flex-start; 
+        min-height: auto; 
+        padding: 40px 0; 
+    }
+
+    .login-box{
+        width: 80%;
+        max-width: 400px;
+        margin-bottom: 30px;
+    }
+    
+    .submit-btn{
+        width: 100%;
+        max-width: none;
+    }
+
+    .image-placeholder{
+        width: 80%;
+        max-width: 400px;
+        height: 250px;
+    }
+}
+
+/* Mobile Screens (max-width: 576px) */
+@media (max-width: 576px){
+    .container{
+        padding: 20px 0;
+    }
+
+    .login-box{
+        padding: 25px;
+        width: 90%;
+    }
+
+    .submit-btn{
+        padding: 10px;
+    }
+    
+    .image-placeholder{
+        width: 90%;
+        height: 200px;
+    }
+}
+
+/* Mini-Watch Screens (max-width: 320px) */
+@media (max-width: 320px){
+    .login-box{
+        padding: 15px;
+    }
+
+    .login-box h2 {
+        font-size: 20px;
+    }
+
+    .input-group label, .input-group input, .submit-btn, .signup-link{
+        font-size: 12px;
+    }
+    
+    .image-placeholder{
+        display: none;
+    }
+}

@@ -1,0 +1,392 @@
+ /* Recycling game     */
+  *{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    
+ }
+
+ 
+  .back-btn {
+            text-decoration: none;
+            font-size: 20px;
+            color: #000000;
+            padding: 6px 10px;
+            border: 1px solid #ffffff;
+            border-radius: 6px;
+        }
+
+        .back-btn:hover,
+        .back-btn:active {
+            background-color: #84c586;
+            color: #ffffff;
+        }
+
+    .item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.drag-item {
+    cursor: grab;
+    transition: all 0.3s ease;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.drag-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+}
+        
+        .container-fluid.bg-success h2, 
+        .container-fluid.bg-success p {
+            color: white;
+            margin: 0;
+            padding: 10px 0;
+        }
+        
+        #stat-box {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            min-width: 120px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #6c757d;
+            font-weight: bold;
+        }
+        
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #198754;
+        }
+        
+        #game_area {
+            background: #e9ecef !important;
+            border-radius: 10px;
+            min-height: 250px;
+        }
+        
+        #panel-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #495057;
+        }
+        
+        .drag-item {
+            cursor: grab;
+            transition: all 0.3s ease;
+            min-height: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .drag-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+        }
+        
+        .drag-item.dragging {
+            opacity: 0.5;
+        }
+        
+        .item-name {
+            margin-top: 10px;
+            text-align: center;
+        }
+        
+        .drop-bin {
+            min-height: 200px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .drop-bin.drag-over {
+            background-color: rgba(25, 135, 84, 0.1) !important;
+            transform: scale(1.02);
+        }
+        
+        #bin_img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        
+        .dropped-item {
+            background: #198754;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin: 2px;
+        }
+        
+        #result {
+            min-height: 100px;
+        }
+        
+        .btn {
+            margin: 5px;
+            padding: 10px 25px;
+            font-weight: bold;
+        }
+        
+        /* Timer animation */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .timer-warning {
+            color: #dc3545 !important;
+            animation: pulse 1s infinite;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            #start_bar {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            #stat-box {
+                width: 100%;
+            }
+            
+            .btn {
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
+
+        .bin-img{
+            width: 150px;
+            height: 20vh;
+        }
+.accordion-header {
+  background-color: #da110a;
+  
+}
+#header{
+    background: #A1BC98;
+}
+/* Accordion item background & text color */
+.accordion-item {
+  background-color: #f3ffe6;       /* soft green background */
+  border: none;
+}
+
+.accordion-button {
+  background-color: #25a844;       /* button background */
+  color: #2d4a28;                  /* text color */
+  font-weight: 600;
+}
+
+/* Button when collapsed */
+.accordion-button.collapsed {
+  background-color: #0e934a;
+  color: #f4f9f3;
+}
+
+/* Replace default chevron with a clover icon */
+.accordion-button::after , .accordion-button::before{
+  background-image: url("../image2/parks_svg.svg");
+  background-size: 1rem 1rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  transform: none !important;   /* don’t rotate like the chevron */
+}
+
+/* Remove rotation bootstrap applies on open */
+.accordion-button:not(.collapsed)::after {
+  transform: none !important;
+}
+
+/* Accordion body text color */
+.accordion-body {
+  color: #2d4a28;
+}
+
+
+#game-li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px; /* Space between icon and text */
+}
+
+#game-li::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url('../image2/game-icon1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+.game-list {
+       display: inline-block;
+    margin: 0 auto;
+    text-align: left; 
+    list-style: none;
+    list-style-position: inside;
+    
+    
+}
+:root {
+    --footer-bg: #A1BC98;
+    --footer-text: #353532;
+    --footer-heading: #353532;
+    --footer-link-hover: #015204;
+    --footer-border: #3b3f44;
+    --green:rgb(171, 217, 171);
+    --blue:rgb(17, 115, 107);
+    }
+
+         
+        
+/* The SVG divider itself */
+ .footer-divider svg {
+    display: block; 
+    width: 100%;
+    height: 20vh; 
+    fill: var(--footer-bg); 
+ }
+ .footer-wave {
+ background-color:#A1BC98;
+ color: var(--footer-text);
+ width: 100%;
+
+}
+        
+
+ .footer-wave__heading {
+      color: var(--footer-heading);
+     font-weight: 600;
+     margin: 0 0 1rem 0;
+ }
+
+ #footer_btn{
+     background:linear-gradient(90deg, var(--blue), var(--green) ) ;
+    
+     border-radius: 50px; 
+
+            
+ }
+        
+ #footer-wave__links ul { margin: 0; padding: 0; list-style: none; }
+ #footer-wave_links ul li{
+            font-size: 25px;
+            font-weight: bold;
+ }
+        
+  #footer-wave__links a { 
+            color: var(--footer-text); 
+            text-decoration: none; 
+            transition: all 0.2s ease;
+            
+  }
+ #footer-wave__links a:hover { 
+            color: var(--footer-link-hover); 
+            transition: padding-left 0.5s ease-in-out;
+            font-size: large;
+            padding-left: 5px;   
+ }
+
+ #footer_address{
+            background-image: url(image2/circle-scatter-Footer_background.svg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: #3b3f44 small 12px;
+            
+          
+ }
+ #footer_location ul { 
+            margin: 0; 
+            padding: 0; 
+            list-style: none;
+ }
+ 
+ .footer-wave__bottom {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--footer-border);
+            gap: 1.5rem;
+            text-align: center;
+        }
+ .footer-wave__copyright { font-size: 0.875em; }
+ #footer-wave_icon{
+            margin-left:3 ;
+ }
+
+
+ /* Responsive for footer */ 
+ /* mini tablet - lg tablet */
+@media (min-width:774px) and (max-width: 992px) {
+
+    /* Adds spacing between columns */
+    .footer-wave__content,
+    #footer-wave__links {
+        margin-bottom: 30px;
+    }
+
+    /* Social icons center aligned */
+    #footer_icon {
+        text-align: center !important;
+        margin-top: 15px;
+    }
+     #footer_location ul { 
+            margin: 0; 
+            padding: 0; 
+            list-style: none;
+ }
+}
+
+
+/* MOBILE (≤ 750px) */
+@media (max-width: 750px) {
+    
+    .footer-wave {
+        text-align: center;
+    }
+
+    .footer-btn {
+        margin-bottom: 10px;
+    }
+
+    #footer-wave__links ul {
+        padding-left: 0;
+    }
+
+    .footer-wave__bottom p {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    /* FULL WIDTH ADDRESS CARD */
+    #footer_address {
+        width: 100%;
+    }
+}
+
+
+
+
+

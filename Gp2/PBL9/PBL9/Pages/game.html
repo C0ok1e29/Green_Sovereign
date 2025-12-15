@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASSA Alliance Map</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="icon" href="../image4/logo.png" type="favicon">
+    <link rel="stylesheet" href="../css/game.css">
+</head>
+
+<body>
+     
+   	 <!--Nav-->
+    <input type="checkbox" id="menu-toggle-checkbox">
+    
+    <nav class="navbar">
+        <div class="left-nav-group" >
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <!-- Using a placeholder image since "image4/logo.png" might not exist -->
+                <img src="../image4/logo.png" alt="Green Sovereign"  style="height: 60px; ">
+                <span style="margin-top: 0;">Green Sovereign</span>
+            </a>
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links" >
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="#">Eco-Habit<i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../info_page1.html">Nature</a></li>
+                    <li><a href="info_page2.html">EF</a></li>
+                    <li><a href="benefits.html">Benefits</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Green-Tech<i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="ecopage.html">Overview</a></li>
+                    <li><a href="SLES.html">SLES</a></li>
+                    <li><a href="WWMT.html">W & WMT</a></li>
+                </ul>
+            </li>
+            <li><a href="recycling.html">Recycling</a></li>
+            <div class="icon-links">
+                <a href="game.html"><i class="fa-solid fa-gamepad"></i></a>
+                <a href="action_tracker.html"><i class="fa-regular fa-calendar"></i></a>
+            </div>
+        </ul>
+
+        <!-- Mobile Menu Toggle Button -->
+        <label for="menu-toggle-checkbox" class="menu-toggle">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </label>
+    </nav>
+    <!-- Off-canvas Overlay -->
+    <label for="menu-toggle-checkbox" class="offcanvas-overlay"></label>
+    <!-- Off-canvas Sidebar for Mobile -->
+    <div class="offcanvas-sidebar">
+        <label for="menu-toggle-checkbox" class="sidebar-close">
+            <i class="fas fa-times"></i>
+        </label>
+        
+        <div class="sidebar-logo">
+            <img src="../image4/logo.png" alt="Green Sovereign" style="height: 35px;">
+            <span>Green Sovereign</span>
+        </div>
+        
+        <ul class="sidebar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            
+            <li>
+                <input type="checkbox" id="mobile-dropdown-1" class="mobile-dropdown-checkbox">
+                <label for="mobile-dropdown-1" class="sidebar-dropdown-label">
+                    Eco-Friendly Habits <i class="fa-solid fa-caret-down"></i>
+                </label>
+                <ul class="sidebar-dropdown-menu">
+                    <li><a href="info_page1.html">Respecting Nature</a></li>
+                    <li><a href="info_page2.html">EF Habits</a></li>
+                    <li><a href="benefits.html">Benefits</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <input type="checkbox" id="mobile-dropdown-2" class="mobile-dropdown-checkbox">
+                <label for="mobile-dropdown-2" class="sidebar-dropdown-label">
+                    Green Technology <i class="fa-solid fa-caret-down"></i>
+                </label>
+                <ul class="sidebar-dropdown-menu">
+                    <li><a href="ecopage.html">Overview</a></li>
+                    <li><a href="SLES.html">SLES</a></li>
+                    <li><a href="WWMT.html">W & WMT</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="recycling.html">Recycling Tips</a></li>
+            
+            <!-- Mobile version of icon links with text -->
+            <li class="sidebar-icon-links-mobile">
+                <a href="game.html"><i class="fa-solid fa-gamepad"></i> Game</a>
+                <a href="action_tracker.html"><i class="fa-regular fa-calendar"></i> Action Tracker</a>
+            </li>
+        </ul>
+        
+    </div>
+   <!-- End of Nav -->
+
+
+    <div class="map-container" data-aos="flip-left">
+        <div class="bg-map">
+            <img src="../image4/map.png" alt="map" class="map">
+
+            <!-- CLICKABLE RED POINTS -->
+            <a href="maze.html" id="cp1" class="checkpoint"></a>
+            <a href="eco-quiz.html" id="cp2" class="checkpoint"></a>
+            <a href="recycling_drag.html" id="cp3" class="checkpoint"></a>
+
+            <!-- CHECKPOINT LABELS -->
+            <div id="label1" class="checkpoint-label">Maze</div>
+            <div id="label2" class="checkpoint-label">Eco-Quiz</div>
+            <div id="label3" class="checkpoint-label">Drag and Drop</div>
+
+            <!-- CHECKPOINT BOX LIST -->
+            <div class="checkpoint-list">
+                <h4>CHECK POINTS</h4>
+                <label><input type="checkbox"> Drag and Drop</label><br>
+                <label><input type="checkbox"> The maze</label><br>
+                <label><input type="checkbox"> Eco-quiz</label>
+            </div>
+
+        </div>
+    </div>
+
+      <!-- footer -->
+    <div class="footer-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
+          <path d="M0,80 C240,20 480,140 720,80 C960,20 1200,140 1440,80 V140 H0 Z"></path>
+        </svg>
+    </div>
+
+    
+    <footer class="footer-wave" >
+        <div class="container">
+
+            <div class="row">
+                <div class=" col-md-4 footer-wave__content ms-0" >
+                    <img src="../image4/logo.png" alt="logo" id="footer_log" class="mb-3" class="mb-3" style="height: 40px;">
+                    <p class="text-md-start fs-5">
+                        Don't wait for change - Be the change. <br>
+                        Start recycling, reducing waste to protect our Park
+                        <b>Together with Green_sovereign</b>
+                    </p>
+                    <div class="row">
+                        <div class="col-6">
+                           <button class="btn" id="footer_btn"><a href="ecopage.html" class="text-decoration-none text-dark">Go GreenTech</a></button>
+                        </div>
+
+                        <div class="col-6">
+                           <button class="btn" id="footer_btn"><a href="info_page1.html" class="text-decoration-none text-dark">Learn Eco Tips</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="footer-wave__links">
+                    <div class="row">
+                        <div class="col-6">
+                            <h3 class="footer-wave__heading"> Quick Link</h3>
+                         <ul>
+                           <li class="mb-3"><a href="../index.html">Home</a></li>
+                           <li class="mb-3" ><a href="about_us.html">About Us</a></li>
+                           <li class="mb-3" ><a href="info_page1.html">Eco-Friendly Habits</a></li>
+                           <li class="mb-3"><a href="ecopage.html">Green Technology</a></li>
+                           <li class="mb-3" ><a href="recycling.html">Recycling Tips</a></li>
+                    
+                         </ul>
+                        </div>
+
+                        <div class="col-6">
+                            <h3 class="footer-wave__heading">User Menu</h3>
+                           <ul>
+                               <li class="mb-3"><a href="signup.html">Sign in</a></li>
+                               <li class="mb-3"><a href="login.html">Log In</a></li>
+                               <li class="mb-3"><a href="game.html">Games</a></li>
+                               <li class="mb-3"><a href="action_tracker.html">Action_tracker</a></li>
+                           </ul>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                <div class="card col-md-4 border-0 shadow-sm" id="footer_address">
+                            <div class="card-body ">
+                                <h2 class="text-uppercase"><b>Address</b></h2>
+                                <p class="fs-6 text-dark mb-2">
+                                    No.242,Maha Bandula Road, Lanmadaw Township
+                                    <br>Yangon,Myanmar
+                                </p>
+                                <div class="row mt-3">
+                                    <ul>
+                                       <li class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-envelope-fill fs-5"></i>
+                                        <a href="" class="text-decoration-none text-dark">GreenSq_Sovereign.com</a>
+                                       </li>
+                                       <li class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-telephone-fill fs-5"></i>
+                                        <span class="text-dark">+95 9224887436</span>
+                                       </li>
+                                       <li class="d-flex align-items-center">
+                                        <i class="bi bi-telephone-fill fs-5"></i>
+                                        <span class="text-dark">+1 4978607951</span>
+                                       </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                                
+                </div>
+            </div>
+            <div class="footer-wave__bottom">
+                <div class="row">
+                   <div class="col-md-6">
+                     <p class="footer-wave__copyright"><b>&copy; Copyright 2026 All Rights Reserved. Developed by Sangria Green Sovereign</b></p>
+                   </div>
+                   <div class="col-6 text-center text-md-end" id="footer_icon">    
+                            <a href="https://www.facebook.com" class="text-dark me-4">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com" class="text-dark me-4">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://www.tiktok.com" class="text-dark me-4">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+                        
+                
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </footer>
+  
+
+    <script>
+     AOS.init();
+    </script>
+
+</body>
+
+</html>

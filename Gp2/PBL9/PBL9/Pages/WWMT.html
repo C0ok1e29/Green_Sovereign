@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+	<link rel="icon" href="../image4/logo.png" type="favicon">
+
+	<!-- Responsive meta tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		:root {
+			--primary-color: #2c7a7b;
+			--secondary-color: #4fd1c5;
+			--accent-color: #81e6d9;
+			--dark-color: #1a202c;
+			--light-color: #f7fafc;
+			--success-color: #48bb78;
+			--warning-color: #ed8936;
+			--danger-color: #f56565;
+		}
+
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			color: #333;
+			background-color: #f8f9fa;
+			overflow-x: hidden;
+			display: flex;
+			flex-direction: column;
+			min-height: 100vh;
+		}
+	</style>
+	<link rel="stylesheet" href="../css/style3.css">
+	<title>Water & Waste Management Tech</title>
+</head>
+
+<body>
+
+	 	 <!--Nav-->
+    <input type="checkbox" id="menu-toggle-checkbox">
+    
+    <nav class="navbar">
+        <div class="left-nav-group" >
+            <!-- Logo -->
+            <a class="navbar-brand" href="../index.html">
+                <!-- Using a placeholder image since "image4/logo.png" might not exist -->
+                <img src="../image4/logo.png" alt="Green Sovereign"  style="height: 60px; ">
+                <span style="margin-top: 0;">Green Sovereign</span>
+            </a>
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links" >
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="#">Eco-Habit<i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="info_page1.html">Nature</a></li>
+                    <li><a href="info_page2.html">EF</a></li>
+                    <li><a href="benefits.html">Benefits</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Green-Tech<i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="ecopage.html">Overview</a></li>
+                    <li><a href="SLES.html">SLES</a></li>
+                    <li><a href="WWMT.html">W & WMT</a></li>
+                </ul>
+            </li>
+            <li><a href="recycling.html">Recycling</a></li>
+            <div class="icon-links">
+                <a href="game.html"><i class="fa-solid fa-gamepad"></i></a>
+                <a href="action_tracker.html"><i class="fa-regular fa-calendar"></i></a>
+            </div>
+        </ul>
+
+        <!-- Mobile Menu Toggle Button -->
+        <label for="menu-toggle-checkbox" class="menu-toggle">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </label>
+    </nav>
+    <!-- Off-canvas Overlay -->
+    <label for="menu-toggle-checkbox" class="offcanvas-overlay"></label>
+    <!-- Off-canvas Sidebar for Mobile -->
+    <div class="offcanvas-sidebar">
+        <label for="menu-toggle-checkbox" class="sidebar-close">
+            <i class="fas fa-times"></i>
+        </label>
+        
+        <div class="sidebar-logo">
+            <img src="../image4/logo.png" alt="Green Sovereign" style="height: 35px;">
+            <span>Green Sovereign</span>
+        </div>
+        
+        <ul class="sidebar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            
+            <li>
+                <input type="checkbox" id="mobile-dropdown-1" class="mobile-dropdown-checkbox">
+                <label for="mobile-dropdown-1" class="sidebar-dropdown-label">
+                    Eco-Friendly Habits <i class="fa-solid fa-caret-down"></i>
+                </label>
+                <ul class="sidebar-dropdown-menu">
+                    <li><a href="info_page1.html">Respecting Nature</a></li>
+                    <li><a href="info_page2.html">EF Habits</a></li>
+                    <li><a href="benefits.html">Benefits</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <input type="checkbox" id="mobile-dropdown-2" class="mobile-dropdown-checkbox">
+                <label for="mobile-dropdown-2" class="sidebar-dropdown-label">
+                    Green Technology <i class="fa-solid fa-caret-down"></i>
+                </label>
+                <ul class="sidebar-dropdown-menu">
+                    <li><a href="ecopage.html">Overview</a></li>
+                    <li><a href="SLES.html">SLES</a></li>
+                    <li><a href="WWMT.html">W & WMT</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="recycling.html">Recycling Tips</a></li>
+            
+            <!-- Mobile version of icon links with text -->
+            <li class="sidebar-icon-links-mobile">
+                <a href="game.html"><i class="fa-solid fa-gamepad"></i> Game</a>
+                <a href="action_tracker.html"><i class="fa-regular fa-calendar"></i> Action Tracker</a>
+            </li>
+        </ul>
+        
+    </div>
+   <!-- End of Nav -->
+
+
+
+	<section id="smart-lighting-banner" class="mb-4">
+		<div id="parkLightingCarousel" class="carousel slide" data-bs-ride="carousel">
+			<!-- Indicators -->
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#parkLightingCarousel" data-bs-slide-to="0"
+					class="active"></button>
+				<button type="button" data-bs-target="#parkLightingCarousel" data-bs-slide-to="1"></button>
+				<button type="button" data-bs-target="#parkLightingCarousel" data-bs-slide-to="2"></button>
+			</div>
+
+			<!-- Carousel Inner -->
+			<div class="carousel-inner">
+
+				<!-- Slide 1 -->
+				<div class="carousel-item active">
+					<img src="../image3/1.png" alt="Smart Park Lighting">
+					<div class="carousel-caption d-none d-md-block">
+						<h1 class="fw-bold">Smart Water Conservation Systems</h1>
+						<p>Automated sprinklers, moisture sensors, and rainwater harvesting reduce water waste by
+							watering plants only when needed, keeping the park green and sustainable.</p>
+					</div>
+				</div>
+
+				<!-- Slide 1 -->
+				<div class="carousel-item">
+					<img src="../image3/2.png" class="d-block w-100"
+						alt="Smart Park Lighting">
+					<div class="carousel-caption d-none d-md-block">
+						<h1 class="fw-bold">Intelligent Waste Bins</h1>
+						<p>Smart bins with fill-level sensors notify park staff when they need to be emptied, preventing
+							overflow and keeping the environment clean.</p>
+					</div>
+				</div>
+
+				<!-- Slide 1 -->
+				<div class="carousel-item">
+					<img src="../image3/3.png" class="d-block w-100"
+						alt="Smart Park Lighting">
+					<div class="carousel-caption d-none d-md-block">
+						<h1 class="fw-bold">Water Quality Monitoring Tools</h1>
+						<p>Real-time sensors track water cleanliness in ponds, fountains, and streams, ensuring safe and
+							healthy water ecosystems for people and wildlife.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Controls -->
+			<button class="carousel-control-prev" type="button" data-bs-target="#parkLightingCarousel"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#parkLightingCarousel"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</button>
+		</div>
+	</section>
+	<!-- end of banner -->
+	<hr>
+
+	<!-- start of leaflet -->
+	<h1></h1>
+	<div class="container-fluid row leaflet">
+		<div class="col-md-4 col-sm-12 flet1 border">
+			<div class="p-3">
+				<h2 class="text-center">The Importance Of Nature In Technology</h2>
+				<li>Nature inspires eco-friendly technology used in parks, such as solar lighting, smart waste bins, and
+					water-saving systems.</li>
+				<li>Combining natural environments with modern technology improves park safety, cleanliness, and visitor
+					experience.</li>
+				<li>Technology helps protect natural habitats in parks by monitoring pollution, water quality, and plant
+					health.</li>
+			</div>
+			<div class="p-3"><img src="../image4/thakhinmya.webp" class="leaimg1">
+			</div>
+			<div class="p-3">
+				<p>Nature and technology work together to create cleaner, safer, and more eco-friendly parks. Modern
+					tools like solar lights, smart waste bins, and environmental sensors help protect natural habitats,
+					improve hygiene, and reduce pollution. Technology also supports conservation, lowers maintenance
+					costs, and enhances visitor learning through digital guides and interactive features. By blending
+					natural environments with smart innovations, parks become more sustainable, efficient, and enjoyable
+					for everyone.</p>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-12 flet2 border">
+			<div class="p-3">
+				<h3>The Big Improvement</h3>
+				<h4>To Our Park</h4>
+			</div>
+			<p class="p-3">The park will undergo major upgrades to create a cleaner, safer, and more enjoyable
+				environment for everyone. New eco-friendly systems—such as improved waste management, clean water
+				solutions, and smart green technology—will reduce pollution and keep the park healthy. Restored
+				greenery, repaired pathways, safer play areas, and better lighting will make the park more welcoming for
+				families and visitors.</p>
+			<div class="p-3 card">
+				<h6 class="p-2">Recent innovations in water and waste management are making our parks cleaner, safer,
+					and more sustainable. From smart water sensors and advanced filtration to eco-friendly waste
+					solutions and rainwater harvesting, these technologies help protect the environment while improving
+					community well-being</h6>
+			</div>
+
+			<div class="p-3">
+				<li>Upgraded eco-friendly waste management to keep the park clean and reduce pollution.</li>
+				<li>Improved clean water systems for safer and healthier park environments.</li>
+				<li>Installation of smart green technology for energy efficiency and sustainability.</li>
+				<li>Enhanced lighting and safety features to make the park secure for all visitors.</li>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-12 flet3 border">
+			<img src="../image4/chico.jpg" alt=""
+				style="height: 200px; width: 100%; border-radius: 8px; margin-bottom: 20px; object-fit: cover;">
+			<div class="bgimgflet1">
+				<h3 class="p-5 text-white">"Where smart technology meets natural harmony."</h3>
+			</div>
+			<img src="../image4/myapark.webp"
+				style="height: 200px; width: 100%; border-radius: 8px; margin-bottom: 20px; object-fit: cover;">
+			<div>
+				<h4 class="p-3">GREEN SOURVEIGN</h4>
+				<h5 class="" style="font-family: pacifico;">- ASSA Alliance</h5>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- New Section: Benefits of Smart Technology in Parks -->
+	<div class="container benefits-section" style="margin-left: 110px;">
+		<div class="benefits-header">
+			<h2>Benefits of Smart Technology in Parks</h2>
+			<p>Integrating advanced technology into park management creates numerous advantages for both visitors and
+				the environment</p>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4 mb-4">
+				<div class="benefit-card">
+					<i class="bi bi-droplet-fill benefit-icon"></i>
+					<h3>Water Conservation</h3>
+					<p>Smart water management systems significantly reduce water waste while maintaining healthy park
+						environments.</p>
+					<ul>
+						<li>Up to 40% reduction in water usage</li>
+						<li>Real-time moisture monitoring</li>
+						<li>Automated irrigation scheduling</li>
+						<li>Rainwater harvesting integration</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-4 mb-4">
+				<div class="benefit-card">
+					<i class="bi bi-recycle benefit-icon"></i>
+					<h3>Waste Management</h3>
+					<p>Intelligent waste systems optimize collection schedules and improve recycling efficiency in
+						public spaces.</p>
+					<ul>
+						<li>30% reduction in collection costs</li>
+						<li>Fill-level monitoring prevents overflow</li>
+						<li>Optimized collection routes</li>
+						<li>Increased recycling rates</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-4 mb-4">
+				<div class="benefit-card">
+					<i class="bi bi-graph-up benefit-icon"></i>
+					<h3>Environmental Impact</h3>
+					<p>Smart park technologies contribute to healthier ecosystems and reduced environmental footprint.
+					</p>
+					<ul>
+						<li>Real-time water quality monitoring</li>
+						<li>Pollution detection and alerts</li>
+						<li>Wildlife habitat protection</li>
+						<li>Carbon footprint reduction</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- start of news -->
+	<div class="mainews">
+		<div class="row border cardnews1">
+			<h3 class="p-2 border newstitle text-white text-center">NEWS UPDATE</h3>
+			<div class="col-md-5">
+				<img src="../image4/parks.webp" alt=""
+					style="height: 300px; width: 600px; border-radius: 8px; margin-top: 10px;  margin-bottom: 10px; object-fit: cover;">
+				<img src="../image3/wwmt.jpg" alt=""
+					style="height: 300px; width: 600px; border-radius: 8px; margin-top: 10px;  margin-bottom: 10px; object-fit: cover;">
+				<img src="../image3/waste.webp" alt=""
+					style="height: 300px; width: 600px; border-radius: 8px; margin-top: 10px;  margin-bottom: 10px; object-fit: cover;">
+			</div>
+
+			<!-- NEWS -->
+
+			<div class="col-md-7 p-2 panews">
+				<div class=" news1 p-2" style="margin-left: 20px;">
+					<h5 class="hot">WATER <span class="badge text-bg-dark tphot">OLD</span></h5>
+					<p class="fw-bold">Smart Water Monitoring Systems</p>
+					<small class="newslink"><a href="https://www.watertechonline.com/">Published on March 15,
+							2025</a></small>
+				</div>
+				<hr>
+				<div class="news1 p-2" style="margin-left: 20px;">
+					<h5 class="hot">HARVESTING <span class="badge text-bg-danger tpcol">HOT</span></h5>
+					<p class="fw-bold">Innovative Rainwater Harvesting Systems</p>
+					<small class="newslink"><a href="https://www.watertechonline.com/">Published on May 3,
+							2025</a></small>
+				</div>
+				<hr>
+				<div class="news1 p-2" style="margin-left: 20px;">
+					<h5 class="hot">WATER ENERGY <span class="badge text-bg-dark tphot">OLD</span></h5>
+					<p class="fw-bold">Expansion of Waste-to-Energy Plants</p>
+					<small class="newslink"><a href="https://waste-management-world.com/">February 28, 2025</a></small>
+				</div>
+				<hr>
+				<div class="news1 p-2" style="margin-left: 20px;">
+					<h5 class="hot">INNOVATIONS <span class="badge text-bg-warning tprec">RECENT</span></h5>
+					<p class="fw-bold">Biodegradable Packaging Innovations</p>
+					<small class="newslink"><a href="https://www.sciencedaily.com/news/earth_climate/water/">Published
+							on January 10, 2025</a></small>
+				</div>
+				<hr>
+				<div class="news1 p-2" style="margin-left: 20px;">
+					<h5 class="hot">SMART BINS <span class="badge text-bg-dark tphot">OLD</span></h5>
+					<p class="fw-bold">Smart Bin Technologies in Urban Areas</p>
+					<small class="newslink"><a href="https://www.theguardian.com/environment">Published on April 5,
+							2025</a></small>
+				</div>
+				<hr>
+				<div class="news1 p-2" style="margin-left: 20px;">
+					<h5 class="hot">WATER <span class="badge text-bg-danger tphot">HOT</span></h5>
+					<p class="fw-bold">Advanced Water Filtration Systems</p>
+					<small class="newslink"><a href="https://www.epa.gov/newsroom">Published on March 22,
+							2025</a></small>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	  <!-- footer -->
+    <div class="footer-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
+          <path d="M0,80 C240,20 480,140 720,80 C960,20 1200,140 1440,80 V140 H0 Z"></path>
+        </svg>
+    </div>
+
+    
+    <footer class="footer-wave" >
+        <div class="container">
+
+            <div class="row">
+                <div class=" col-md-4 footer-wave__content ms-0" >
+                    <img src="../image4/logo.png" alt="logo" id="footer_log" class="mb-3" class="mb-3" style="height: 40px;">
+                    <p class="text-md-start fs-5">
+                        Don't wait for change - Be the change. <br>
+                        Start recycling, reducing waste to protect our Park
+                        <b>Together with Green_sovereign</b>
+                    </p>
+                    <div class="row">
+                        <div class="col-6">
+                           <button class="btn" id="footer_btn"><a href="ecopage.html" class="text-decoration-none text-dark">Go GreenTech</a></button>
+                        </div>
+
+                        <div class="col-6">
+                           <button class="btn" id="footer_btn"><a href="info_page1.html" class="text-decoration-none text-dark">Learn Eco Tips</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="footer-wave__links">
+                    <div class="row">
+                        <div class="col-6">
+                            <h3 class="footer-wave__heading"> Quick Link</h3>
+                         <ul>
+                           <li class="mb-3"><a href="../index.html">Home</a></li>
+                           <li class="mb-3" ><a href="about_us.html">About Us</a></li>
+                           <li class="mb-3" ><a href="info_page1.html">Eco-Friendly Habits</a></li>
+                           <li class="mb-3"><a href="ecopage.html">Green Technology</a></li>
+                           <li class="mb-3" ><a href="recycling.html">Recycling Tips</a></li>
+                    
+                         </ul>
+                        </div>
+
+                        <div class="col-6">
+                            <h3 class="footer-wave__heading">User Menu</h3>
+                           <ul>
+                               <li class="mb-3"><a href="signup.html">Sign in</a></li>
+                               <li class="mb-3"><a href="login.html">Log In</a></li>
+                               <li class="mb-3"><a href="game.html">Games</a></li>
+                               <li class="mb-3"><a href="action_tracker.html">Action_tracker</a></li>
+                           </ul>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                <div class="card col-md-4 border-0 shadow-sm" id="footer_address">
+                            <div class="card-body ">
+                                <h2 class="text-uppercase"><b>Address</b></h2>
+                                <p class="fs-6 text-dark mb-2">
+                                    No.242,Maha Bandula Road, Lanmadaw Township
+                                    <br>Yangon,Myanmar
+                                </p>
+                                <div class="row mt-3">
+                                    <ul>
+                                       <li class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-envelope-fill fs-5"></i>
+                                        <a href="" class="text-decoration-none text-dark">GreenSq_Sovereign.com</a>
+                                       </li>
+                                       <li class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-telephone-fill fs-5"></i>
+                                        <span class="text-dark">+95 9224887436</span>
+                                       </li>
+                                       <li class="d-flex align-items-center">
+                                        <i class="bi bi-telephone-fill fs-5"></i>
+                                        <span class="text-dark">+1 4978607951</span>
+                                       </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                                
+                </div>
+            </div>
+            <div class="footer-wave__bottom">
+                <div class="row">
+                   <div class="col-md-6">
+                     <p class="footer-wave__copyright"><b>&copy; Copyright 2026 All Rights Reserved. Developed by Sangria Green Sovereign</b></p>
+                   </div>
+                   <div class="col-6 text-center text-md-end" id="footer_icon">    
+                            <a href="https://www.facebook.com" class="text-dark me-4">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com" class="text-dark me-4">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://www.tiktok.com" class="text-dark me-4">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+                        
+                
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

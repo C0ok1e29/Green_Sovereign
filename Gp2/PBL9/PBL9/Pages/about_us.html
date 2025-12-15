@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="icon" href="../image4/logo.png" type="favicon">
+
+  <link rel="stylesheet" href="../css/about_us.css">
+  
+</head>
+
+<body>
+
+    	 <!--Nav-->
+    <input type="checkbox" id="menu-toggle-checkbox">
+    
+    <nav class="navbar">
+        <div class="left-nav-group" >
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <!-- Using a placeholder image since "image4/logo.png" might not exist -->
+                <img src="../image4/logo.png" alt="Green Sovereign"  style="height: 60px; ">
+                <span style="margin-top: 0;">Green Sovereign</span>
+            </a>
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links" >
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="#">Eco-Habit<i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="info_page1.html">Nature</a></li>
+                    <li><a href="info_page2.html">EF</a></li>
+                    <li><a href="benefits.html">Benefits</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Green-Tech<i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="ecopage.html">Overview</a></li>
+                    <li><a href="SLES.html">SLES</a></li>
+                    <li><a href="WWMT.html">W & WMT</a></li>
+                </ul>
+            </li>
+            <li><a href="recycling.html">Recycling</a></li>
+            <div class="icon-links">
+                <a href="game.html"><i class="fa-solid fa-gamepad"></i></a>
+                <a href="action_tracker.html"><i class="fa-regular fa-calendar"></i></a>
+            </div>
+        </ul>
+
+        <!-- Mobile Menu Toggle Button -->
+        <label for="menu-toggle-checkbox" class="menu-toggle">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </label>
+    </nav>
+    <!-- Off-canvas Overlay -->
+    <label for="menu-toggle-checkbox" class="offcanvas-overlay"></label>
+    <!-- Off-canvas Sidebar for Mobile -->
+    <div class="offcanvas-sidebar">
+        <label for="menu-toggle-checkbox" class="sidebar-close">
+            <i class="fas fa-times"></i>
+        </label>
+        
+        <div class="sidebar-logo">
+            <img src="../image4/logo.png" alt="Green Sovereign" style="height: 35px;">
+            <span>Green Sovereign</span>
+        </div>
+        
+        <ul class="sidebar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            
+            <li>
+                <input type="checkbox" id="mobile-dropdown-1" class="mobile-dropdown-checkbox">
+                <label for="mobile-dropdown-1" class="sidebar-dropdown-label">
+                    Eco-Friendly Habits <i class="fa-solid fa-caret-down"></i>
+                </label>
+                <ul class="sidebar-dropdown-menu">
+                    <li><a href="info_page1.html">Respecting Nature</a></li>
+                    <li><a href="info_page2.html">EF Habits</a></li>
+                    <li><a href="benefits.html">Benefits</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <input type="checkbox" id="mobile-dropdown-2" class="mobile-dropdown-checkbox">
+                <label for="mobile-dropdown-2" class="sidebar-dropdown-label">
+                    Green Technology <i class="fa-solid fa-caret-down"></i>
+                </label>
+                <ul class="sidebar-dropdown-menu">
+                    <li><a href="ecopage.html">Overview</a></li>
+                    <li><a href="SLES.html">SLES</a></li>
+                    <li><a href="WWMT.html">W & WMT</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="recycling.html">Recycling Tips</a></li>
+            
+            <!-- Mobile version of icon links with text -->
+            <li class="sidebar-icon-links-mobile">
+                <a href="game.html"><i class="fa-solid fa-gamepad"></i> Game</a>
+                <a href="action_tracker.html"><i class="fa-regular fa-calendar"></i> Action Tracker</a>
+            </li>
+        </ul>
+        
+    </div>
+   <!-- End of Nav -->
+
+
+  <div class="profile-container" style="margin-top: 140px;">
+
+    <h2 style="text-align: center; color: #3e5948; margin-bottom: 15px;">Our Member</h2>
+    <div class="photos-row">
+      <div class="photo-card">
+        <img src="../image4/aung.png" alt="">
+        <p>Aung Pyae Hlayn Hein</p>
+      </div>
+
+      <div class="photo-card">
+        <img src="../image4/awe.png" alt="">
+        <p>Awe Myat May Thu</p>
+      </div>
+
+      <div class="photo-card">
+        <img src="../image4/shin.png" alt="">
+        <p>Shin Moe Yoon</p>
+      </div>
+
+      <div class="photo-card">
+        <img src="../image4/shune.png" alt="">
+        <p>Shune Lai Win</p>
+      </div>
+    </div>
+
+    <div class="mv-section">
+      <div class="mv-box">
+        <h3>Our Mission</h3>
+        <p>
+          We go by the phrase of “Education Come First” Imagine you being an educated person
+          in the local community, knowing about nature and helping the world be a better place.
+          By inspiring meaningful environmental action and encouraging continuous improvement in
+          our local park, we aim to enhance environmental quality and support the creation of a healthier,
+          smarter, and more technology-adapted space for everyone. Through education and awareness,
+          we hope to help our community become active stewards of a better, greener future.
+        </p>
+      </div>
+
+      <div class="mv-box">
+        <h3>Our Vision</h3>
+        <p>
+          We have a dream where our voices can inspire positive change within the community.
+          Through our website, we hope to encourage the adoption of new technologies and sustainable
+          practices, empowering people to improve their environment for long-term sustainability.
+        </p>
+      </div>
+    </div>
+
+    <div class="bottom-circle"></div>
+
+    <div class="aesthetic-long-card">
+
+      <div class="card-top-accent">
+        <div class="dot"></div>
+        <div class="curve"></div>
+      </div>
+
+      <div class="image-wrapper">
+        <img src="../image4/groupphoto.png" alt="">
+      </div>
+
+      <div class="small-deco"></div>
+
+    </div>
+
+
+  </div>
+
+  <div class="accordion-wrapper">
+
+    <!-- First Accordion Column (Questions 1-5) -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <input type="checkbox" id="acc1" class="accordion-checkbox">
+        <label for="acc1" class="accordion-header">1. Why is park revitalization important?</label>
+        <div class="accordion-content">
+          <p>Revitalizing a park improves safety, cleanliness, and accessibility. It encourages people to spend more
+            time outdoors, promotes physical activity, and strengthens community bonding. A well-maintained park also
+            boosts environmental health and increases neighborhood pride.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="checkbox" id="acc2" class="accordion-checkbox">
+        <label for="acc2" class="accordion-header">2. What problems are found in older parks?</label>
+        <div class="accordion-content">
+          <p>Common issues include broken equipment, poor lighting, lack of safe pathways, littering, vandalism, limited
+            seating, and unmaintained natural areas. These factors can discourage visitors and increase safety risks.
+          </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="checkbox" id="acc3" class="accordion-checkbox">
+        <label for="acc3" class="accordion-header">3. How does lighting make the park safer?</label>
+        <div class="accordion-content">
+          <p>Adding bright, energy-efficient lighting reduces dark spots, helps prevent accidents, and lowers the chance
+            of crime. It makes the park more welcoming for evening walks, family activities, and community events.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="checkbox" id="acc4" class="accordion-checkbox">
+        <label for="acc4" class="accordion-header">4. What is the community's role?</label>
+        <div class="accordion-content">
+          <p>The community helps by identifying problems they experience firsthand. Their feedback guides what
+            improvements are needed. Community involvement also encourages long-term care and respect for the space.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="checkbox" id="acc5" class="accordion-checkbox">
+        <label for="acc5" class="accordion-header">5. How does it support sustainability?</label>
+        <div class="accordion-content">
+          <p>Updating parks with eco-friendly features—like recycling bins, native plants, and solar lights—reduces
+            environmental impact. Healthier green spaces improve air quality and support biodiversity.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Accordion Column (Questions 6-10) -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <input type="checkbox" id="acc6" class="accordion-checkbox">
+        <label for="acc6" class="accordion-header">6. What modern technology can be used?</label>
+        <div class="accordion-content">
+          <p>Smart sensors for waste bins, solar-powered benches, digital maps, security cameras, and eco-friendly
+            lighting systems can make parks cleaner, safer, and more efficient to manage.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="checkbox" id="acc7" class="accordion-checkbox">
+        <label for="acc7" class="accordion-header">7. How does it affect mental and physical health?</label>
+        <div class="accordion-content">
+          <p>A clean, attractive park encourages exercise, relaxation, and time in nature. This reduces stress, boosts
+            mood, and promotes overall well-being—making the community happier and healthier.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="checkbox" id="acc8" class="accordion-checkbox">
+        <label for="acc8" class="accordion-header">8. How to maintain the park afterward?</label>
+        <div class="accordion-content">
+          <p>Regular inspections, community clean-up events, proper waste management, quick repairs, and awareness
+            campaigns help keep the park safe and beautiful long-term.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="checkbox" id="acc9" class="accordion-checkbox">
+        <label for="acc9" class="accordion-header">9. What are the most requested improvements?</label>
+        <div class="accordion-content">
+          <p>Visitors often ask for cleaner spaces, more seating, upgraded play areas, safe walking tracks, better
+            lighting, additional trees or shaded areas, and more security features.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="checkbox" id="acc10" class="accordion-checkbox">
+        <label for="acc10" class="accordion-header">10. How can people help keep it clean?</label>
+        <div class="accordion-content">
+          <p>By using bins responsibly, avoiding littering, reporting broken equipment, respecting wildlife, and
+            educating others, everyone can help maintain a hygienic, family-friendly park.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+      <!-- footer -->
+    <div class="footer-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
+          <path d="M0,80 C240,20 480,140 720,80 C960,20 1200,140 1440,80 V140 H0 Z"></path>
+        </svg>
+    </div>
+
+    
+    <footer class="footer-wave" >
+        <div class="container">
+
+            <div class="row">
+                <div class=" col-md-4 footer-wave__content ms-0" >
+                    <img src="../image4/logo.png" alt="logo" id="footer_log" class="mb-3" style="height: 40px;">
+                    <p class="text-md-start fs-5">
+                        Don't wait for change - Be the change. <br>
+                        Start recycling, reducing waste to protect our Park
+                        <b>Together with Green_sovereign</b>
+                    </p>
+                    <div class="row">
+                        <div class="col-6">
+                           <button class="btn" id="footer_btn"><a href="ecopage.html" class="text-decoration-none text-dark">Go GreenTech</a></button>
+                        </div>
+
+                        <div class="col-6">
+                           <button class="btn" id="footer_btn"><a href="info_page1.html" class="text-decoration-none text-dark">Learn Eco Tips</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="footer-wave__links">
+                    <div class="row">
+                        <div class="col-6">
+                            <h3 class="footer-wave__heading"> Quick Link</h3>
+                         <ul>
+                           <li class="mb-3"><a href="../index.html">Home</a></li>
+                           <li class="mb-3" ><a href="about_us.html">About Us</a></li>
+                           <li class="mb-3" ><a href="info_page1.html">Eco-Friendly Habits</a></li>
+                           <li class="mb-3"><a href="ecopage.html">Green Technology</a></li>
+                           <li class="mb-3" ><a href="recycling.html">Recycling Tips</a></li>
+                    
+                         </ul>
+                        </div>
+
+                        <div class="col-6">
+                            <h3 class="footer-wave__heading">User Menu</h3>
+                           <ul>
+                               <li class="mb-3"><a href="signup.html">Sign in</a></li>
+                               <li class="mb-3"><a href="login.html">Log In</a></li>
+                               <li class="mb-3"><a href="game.html">Games</a></li>
+                               <li class="mb-3"><a href="action_tracker.html">Action_tracker</a></li>
+                           </ul>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                <div class="card col-md-4 border-0 shadow-sm" id="footer_address">
+                            <div class="card-body ">
+                                <h2 class="text-uppercase"><b>Address</b></h2>
+                                <p class="fs-6 text-dark mb-2">
+                                    No.242,Maha Bandula Road, Lanmadaw Township
+                                    <br>Yangon,Myanmar
+                                </p>
+                                <div class="row mt-3">
+                                    <ul>
+                                       <li class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-envelope-fill fs-5"></i>
+                                        <a href="" class="text-decoration-none text-dark">GreenSq_Sovereign.com</a>
+                                       </li>
+                                       <li class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-telephone-fill fs-5"></i>
+                                        <span class="text-dark">+95 9224887436</span>
+                                       </li>
+                                       <li class="d-flex align-items-center">
+                                        <i class="bi bi-telephone-fill fs-5"></i>
+                                        <span class="text-dark">+1 4978607951</span>
+                                       </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                                
+                </div>
+            </div>
+            <div class="footer-wave__bottom">
+                <div class="row">
+                   <div class="col-md-6">
+                     <p class="footer-wave__copyright"><b>&copy; Copyright 2026 All Rights Reserved. Developed by Sangria Green Sovereign</b></p>
+                   </div>
+                   <div class="col-6 text-center text-md-end" id="footer_icon">    
+                            <a href="https://www.facebook.com" class="text-dark me-4">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com" class="text-dark me-4">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://www.tiktok.com" class="text-dark me-4">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+                        
+                
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+ 
+
+
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+/* =================== CSS VARIABLES=================== */
+        :root {
+            --pastel-green-primary: #a8e6cf;
+            --pastel-green-light: #d4f1e6;
+            --pastel-green-medium: #8ed3c5;
+            --pastel-green-dark: #6ab8a9;
+            --pastel-green-accent: #b5e8d9;
+            --bg-light: #f9fffc;
+            --card-bg: rgba(255, 255, 255, 0.95);
+            --text-dark: #2d5047;
+            --text-medium: #5a7a72;
+            --text-light: #8a9e98;
+            --shadow-soft: rgba(168, 230, 207, 0.3);
+            --border-light: rgba(168, 230, 207, 0.4);
+            --font-primary: 'Poppins', sans-serif;
+        }
+
+        /* =================== BASE STYLES =================== */
+        body {
+            font-family: var(--font-primary);
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 30px;
+            line-height: 1.6;
+            overflow-x: hidden;
+
+            /* Enhanced gradient background */
+            background-image:url(../image4/maze_background.jpg);
+            background-attachment: fixed;
+            min-height: 100vh;
+             font-family: "Poppins", sans-serif;
+        }
+
+        /* =================== LAYOUT & CONTAINERS =================== */
+        .page-container {
+            max-width: 1200px; /* Increased from 850px */
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 40px; /* Increased gap */
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 2px solid var(--border-light);
+            border-radius: 25px; /* Larger border radius */
+            padding: 45px 50px; /* Increased padding */
+            box-shadow: 0 12px 40px var(--shadow-soft); /* Stronger shadow */
+            backdrop-filter: blur(15px);
+            transition: all 0.4s ease;
+        }
+
+        /* Interactive hover effect */
+        .card:hover {
+            transform: translateY(-10px); /* More pronounced hover */
+            box-shadow: 0 20px 50px rgba(168, 230, 207, 0.5);
+            border-color: var(--pastel-green-medium);
+        }
+
+        /* =================== TYPOGRAPHY =================== */
+        h1,
+        h2 {
+            font-family: var(--font-primary);
+            color: var(--text-dark);
+            margin-top: 0;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 3.5em; /* Larger font size */
+            text-align: center;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, var(--pastel-green-dark), var(--pastel-green-primary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: 0.5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 1.4em; /* Larger subtitle */
+            color: var(--text-medium);
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: 2.3em; /* Larger h2 */
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 15px;
+            font-weight: 600;
+        }
+
+        /* Enhanced underline effect for h2 */
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px; /* Longer underline */
+            height: 5px; /* Thicker underline */
+            background: linear-gradient(to right, var(--pastel-green-primary), var(--pastel-green-medium));
+            border-radius: 3px;
+        }
+
+        p {
+            color: var(--text-medium);
+            margin-bottom: 25px;
+            font-weight: 400;
+            font-size: 1.1em; /* Slightly larger text */
+        }
+
+        a {
+            color: var(--pastel-green-dark);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+            font-size: 1.1em;
+        }
+
+        /* Animated underline for links */
+        a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: -3px;
+            left: 0;
+            background-color: var(--pastel-green-medium);
+            transition: width 0.3s ease;
+            border-radius: 2px;
+        }
+
+        a:hover {
+            color: var(--pastel-green-dark);
+        }
+
+        a:hover::after {
+            width: 100%;
+        }
+
+        /* =================== COMPONENTS =================== */
+
+        /* Enhanced instructions list */
+        ul {
+            background-color: rgba(168, 230, 207, 0.2); /* More visible background */
+            border-left: 6px solid var(--pastel-green-primary); /* Thicker border */
+            padding: 30px 35px 30px 50px; /* More padding */
+            list-style-type: none;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+
+        ul li {
+            margin-bottom: 20px; /* More spacing */
+            font-size: 1.2em; /* Larger text */
+            color: var(--text-medium);
+            position: relative;
+            padding-left: 15px;
+        }
+
+        ul li:before {
+            content: '✓';
+            position: absolute;
+            left: -30px;
+            color: var(--pastel-green-primary);
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        ul li strong {
+            color: var(--pastel-green-dark);
+            font-weight: 700;
+            font-size: 1.05em;
+        }
+
+        /* Game Section Specifics - ENLARGED */
+        .game-section {
+            text-align: center;
+        }
+
+        .game-section h2 {
+            font-size: 2.5em; /* Even larger for game section */
+        }
+
+        .game-section p {
+            font-size: 1.2em;
+        }
+
+        .game-container {
+            position: relative;
+            display: inline-block;
+            border: 4px solid var(--pastel-green-primary);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow:
+                0 15px 40px rgba(142, 211, 197, 0.3),
+                inset 0 0 30px rgba(168, 230, 207, 0.15);
+            margin: 25px auto;
+            background: #fff;
+            transition: all 0.4s ease;
+            width: 100%;
+            max-width: 900px; /* Much larger max-width */
+        }
+
+        .game-container:hover {
+            border-color: var(--pastel-green-medium);
+            box-shadow:
+                0 20px 60px rgba(142, 211, 197, 0.4),
+                inset 0 0 30px rgba(168, 230, 207, 0.25);
+        }
+
+        /* Make the Scratch game MUCH larger and responsive */
+        .game-container iframe {
+            display: block;
+            width: 100%;
+            height: 650px; /* Significantly taller */
+            border: none;
+            background-color: white;
+        }
+
+        /* Enhanced scanline effect */
+        .scanlines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom,
+                    transparent 97%,
+                    rgba(168, 230, 207, 0.08) 97%);
+            background-size: 100% 10px;
+            pointer-events: none;
+            opacity: 0.7;
+            z-index: 2;
+        }
+
+        .game-credit {
+            margin-top: 25px;
+            font-size: 1.1em;
+            color: var(--text-light);
+        }
+
+        /* Enhanced button-like link for Scratch */
+        .scratch-link {
+            display: inline-block;
+            background: linear-gradient(to right, var(--pastel-green-primary), var(--pastel-green-medium));
+            color: white;
+            padding: 15px 35px; 
+            border-radius: 60px;
+            font-weight: 700;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(142, 211, 197, 0.4);
+            font-size: 1.2em;
+            letter-spacing: 0.5px;
+        }
+
+        .scratch-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(142, 211, 197, 0.5);
+            background: linear-gradient(to right, var(--pastel-green-medium), var(--pastel-green-dark));
+        }
+
+        .scratch-link::after {
+            display: none;
+        }
+
+
+        .back-btn {
+            text-decoration: none;
+            font-size: 20px;
+            color: #ffffff;
+            padding: 6px 10px;
+            border: 1px solid #ffffff;
+            border-radius: 6px;
+        }
+
+        .back-btn:hover,
+        .back-btn:active {
+            background-color: #0b2c0c;
+            color: #ffffff;
+        }
+
+
+
+        /* =================== RESPONSIVE DESIGN =================== */
+        @media (max-width: 1024px) {
+            .game-container iframe {
+                height: 550px;
+            }
+            
+            .game-container {
+                max-width: 800px;
+            }
+        }
+        
+        @media (max-width: 900px) {
+            .game-container iframe {
+                height: 500px;
+            }
+            
+            .game-container {
+                max-width: 700px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+
+            .card {
+                padding: 35px 30px;
+                border-radius: 20px;
+            }
+
+            h1 {
+                font-size: 2.8em;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+            
+            .game-section h2 {
+                font-size: 2.2em;
+            }
+
+            ul {
+                padding: 25px 25px 25px 40px;
+            }
+            
+            .game-container iframe {
+                height: 450px;
+            }
+            
+            .game-container {
+                max-width: 600px;
+            }
+
+            .page-container {
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 650px) {
+            .game-container iframe {
+                height: 400px;
+            }
+            
+            .game-container {
+                max-width: 500px;
+            }
+        }
+        
+        @media (max-width: 550px) {
+            .game-container iframe {
+                height: 350px;
+            }
+            
+            .game-container {
+                max-width: 450px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.3em;
+            }
+
+            .card {
+                padding: 25px 20px;
+                border-radius: 18px;
+            }
+            
+            .game-section h2 {
+                font-size: 1.8em;
+            }
+
+            ul {
+                padding: 20px 20px 20px 35px;
+            }
+            
+            .game-container iframe {
+                height: 300px;
+            }
+            
+            .game-container {
+                max-width: 400px;
+                border-width: 3px;
+            }
+            
+            .scratch-link {
+                padding: 12px 25px;
+                font-size: 1.1em;
+            }
+            
+            .decoration-1, .decoration-2, .decoration-3 {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .game-container iframe {
+                height: 280px;
+            }
+            
+            .game-container {
+                max-width: 350px;
+            }
+        }

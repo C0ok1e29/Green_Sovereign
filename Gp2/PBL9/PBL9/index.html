@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="icon" href="image4/logo.png" type="favicon">
+
+    <link rel="stylesheet" href="css/style4.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: rgb(231, 255, 207);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!--Nav-->
+    <input type="checkbox" id="menu-toggle-checkbox">
+    
+    <nav class="navbar">
+        <div class="left-nav-group" >
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <!-- Using a placeholder image since "image4/logo.png" might not exist -->
+                <img src="image4/logo.png" alt="Green Sovereign"  style="height: 60px; ">
+                <span style="margin: 0;">Green Sovereign</span>
+            </a>
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links" >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Pages/about_us.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="#">Eco-Habit<i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="Pages/info_page1.html">Nature</a></li>
+                    <li><a href="Pages/info_page2.html">EF</a></li>
+                    <li><a href="Pages/benefits.html">Benefits</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Green-Tech<i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="Pages/ecopage.html">Overview</a></li>
+                    <li><a href="Pages/SLES.html">SLES</a></li>
+                    <li><a href="Pages/WWMT.html">W & WMT</a></li>
+                </ul>
+            </li>
+            <li><a href="Pages/recycling.html">Recycling</a></li>
+            <div class="icon-links">
+                <a href="Pages/game.html"><i class="fa-solid fa-gamepad"></i></a>
+                <a href="Pages/action_tracker.html"><i class="fa-regular fa-calendar"></i></a>
+            </div>
+        </ul>
+
+        <!-- Mobile Menu Toggle Button -->
+        <label for="menu-toggle-checkbox" class="menu-toggle">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </label>
+    </nav>
+    <!-- Off-canvas Overlay -->
+    <label for="menu-toggle-checkbox" class="offcanvas-overlay"></label>
+    <!-- Off-canvas Sidebar for Mobile -->
+    <div class="offcanvas-sidebar">
+        <label for="menu-toggle-checkbox" class="sidebar-close">
+            <i class="fas fa-times"></i>
+        </label>
+        
+        <div class="sidebar-logo">
+            <img src="image4/logo.png" alt="Green Sovereign" style="height: 35px;">
+            <span>Green Sovereign</span>
+        </div>
+        
+        <ul class="sidebar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Pages/about_us.html">About Us</a></li>
+            
+            <li>
+                <input type="checkbox" id="mobile-dropdown-1" class="mobile-dropdown-checkbox">
+                <label for="mobile-dropdown-1" class="sidebar-dropdown-label">
+                    Eco-Friendly Habits <i class="fa-solid fa-caret-down"></i>
+                </label>
+                <ul class="sidebar-dropdown-menu">
+                    <li><a href="Pages/info_page1.html">Respecting Nature</a></li>
+                    <li><a href="Pages/info_page2.html">EF Habits</a></li>
+                    <li><a href="Pages/benefits.html">Benefits</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <input type="checkbox" id="mobile-dropdown-2" class="mobile-dropdown-checkbox">
+                <label for="mobile-dropdown-2" class="sidebar-dropdown-label">
+                    Green Technology <i class="fa-solid fa-caret-down"></i>
+                </label>
+                <ul class="sidebar-dropdown-menu">
+                    <li><a href="Pages/ecopage.html">Overview</a></li>
+                    <li><a href="Pages/SLES.html">SLES</a></li>
+                    <li><a href="Pages/WWMT.html">W & WMT</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="Pages/recycling.html">Recycling Tips</a></li>
+            
+            <!-- Mobile version of icon links with text -->
+            <li class="sidebar-icon-links-mobile">
+                <a href="Pages/game.html"><i class="fa-solid fa-gamepad"></i> Game</a>
+                <a href="Pages/action_tracker.html"><i class="fa-regular fa-calendar"></i> Action Tracker</a>
+            </li>
+        </ul>
+        
+    </div>
+   <!-- End of Nav -->
+
+    <!--Banner Start-->
+    <!-- Banner Section -->
+    <section class="banner-section full-banner">
+        <img src="image4/banner.jpg" class="banner-bg">
+        <div class="container">
+            <div class="right-nav-group">
+                <div class="auth-btn">
+                    <a href="Pages/signup.html" class="auth-main">Sign Up</a>
+                    <a href="Pages/login.html" class="auth-main outline">Log In</a>
+                </div>
+ 
+            </div>
+ 
+            <div class="row align-items-center">
+                <div class="col-md-6 text-section">
+                    <h1>Welcome to Green Sovereign</h1>
+                    <p>Your actions matter. Learn, explore, and challenge yourself to become a smarter, greener guardian
+                        of the environment.</p>
+                    <div class="button-group mt-4">
+                        <a href="#design-section" class="btn-main">Learn More</a>
+                        <a href="Pages/eco-quiz.html" class="btn-secondary">Take a Quiz</a>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 video-section">
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <img src="image4/01.jpg" class="banner-img">
+                        </div>
+                        <div class="col-6">
+                            <img src="image4/04.jfif" class="banner-img">
+                        </div>
+                        <div class="col-6">
+                            <img src="image4/03.jfif" class="banner-img">
+                        </div>
+                        <div class="col-6">
+                            <img src="image4/02.jfif" class="banner-img">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+     
+            
+
+    </section>
+    <!--Banner End-->
+
+    <!--EDUCATIONAL PAGE STARTING-->
+    <!-- Design Section -->
+    <section class="design-section " id="design-section" data-aos="zoom-in-up">
+        <div class="container">
+            <h2 style="margin-bottom: 30px; color: rgb(10, 82, 4); text-align: center;">Learn about our "Eco-Friendly"
+                Educational Page</h2>
+            <div class="design-grid">
+                <!-- Design Card 1 -->
+                <div class="design-card">
+                    <div class="card-img">
+                        <img src="image4/entry.jpg" alt="respecting nature">
+                    </div>
+                    <div class="card-content search-card">
+                        <h3>Respecting Nature</h3>
+                        <p>Respecting nature means understanding how our actions affect the world around us. It involves
+                            caring for plants, animals, and natural resources so that the environment stays healthy for
+                            future generations.</p>
+                        <a href="Pages/info_page1.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Design Card 2 -->
+                <div class="design-card">
+                    <div class="card-img">
+                        <img src="image4/g.jpg" alt="habits">
+                    </div>
+                    <div class="card-content">
+                        <h3>Eco-Friendly Habits</h3>
+                        <p>Eco-friendly habits are small, daily choices that reduce waste and protect the planet. These
+                            habits help us use resources responsibly, save energy, and create a cleaner, safer
+                            cleaner park.</p>
+                        <a href="Pages/info_page2.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Design Card 3 -->
+                <div class="design-card">
+                    <div class="card-img">
+                        <img src="image4/flo.jpg" alt="benefits">
+                    </div>
+                    <div class="card-content">
+                        <h3>Benefits</h3>
+                        <p>Sustainable actions bring many benefits to both people and the environment. They improve our
+                            well-being, reduce pollution, and help protect ecosystems, making our communities healthier
+                            and more resilient.</p>
+                        <a href="benefits.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Green Technology Section Start -->
+    <section class="green-tech-section" data-aos="fade-down">
+        <div class="container">
+            <h2 class="section-title">Green Technology</h2>
+            <p class="section-subtitle">
+                Explore how modern technology is helping to protect the environment of the park. From energy-efficient lighting to
+                smart waste management, green technology makes our world cleaner and smarter.
+            </p>
+
+            <div class="green-tech-grid" id="smart-section">
+                <!-- Card 1 -->
+                <div class="green-tech-card">
+                    <div class="card-img">
+                        <img src="image4/smart.jpg" alt="Smart Lighting & Energy Solutions">
+                    </div>
+                    <div class="card-content">
+                        <h3>Smart Lighting & Energy Solutions</h3>
+                        <p>Solar lights, motion sensors, and energy-efficient systems that save power while keeping
+                            areas well-lit and safe.</p>
+                        <a href="Pages/SLES.html" class="card-link">Learn
+                            More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="green-tech-card" id="water-section">
+                    <div class="card-img">
+                        <img src="image4/water.webp" alt="Water & Waste Management Tech">
+                    </div>
+                    <div class="card-content">
+                        <h3>Water & Waste Management Tech</h3>
+                        <p>Rainwater collection, smart sprinklers, composting stations, and sensor bins teach visitors
+                            how to sort waste, use bins correctly, and keep parks clean.</p>
+                        <a href="Pages/WWMT.html" class="card-link">Learn
+                            More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Green Technology Section End -->
+
+    <!--EDUCATIONAL PAGE ENDING-->
+
+
+    <!--RECYCLING PAGE START-->
+
+    <div class="container py-5 search-card">
+
+        <!-- Card 1: Smart Recycling -->
+        <div class="recycle-card" data-aos="fade-right">
+            <div class="row g-0 align-items-center">
+
+                <!-- LEFT -->
+                <div class="col-md-4 recycle-left">
+                    <h3 class="fw-bold text-dark"><i class="fas fa-recycle"></i> Smart Recycling</h3>
+                    <img src="image2/clean_parks.jpg"
+                        alt="Clean Park" class="img-fluid mt-3">
+                </div>
+
+                <!-- RIGHT -->
+                <div class="col-md-8 recycle-body">
+                    <p>
+                        Learn the right way to recycle. Help our parks come back to life by turning waste into beauty.
+                        Recycled materials can decorate, restore, and revitalize our parks.
+                    </p>
+
+                    <ul class="features-list">
+                        <li>Correct plastic recycling</li>
+                        <li>Correct glass recycling</li>
+                        <li>Correct paper recycling</li>
+                        <li>Proper waste disposal in recycling bins</li>
+                        <li>Amazing recycling ideas</li>
+                    </ul>
+
+                    <div class="row text-center recycle-stats my-3">
+                        <div class="col">
+                            <h4 class="fw-bold text-success">100%</h4>
+                            <small>Creative recycled products for parks</small>
+                        </div>
+                        <div class="col">
+                            <h4 class="fw-bold text-success">3×</h4>
+                            <small>More effective recycling</small>
+                        </div>
+                    </div>
+
+               
+                
+                        <a href="Pages/recycling.html" class="recycle-io-button text-decoration-none">Explore<i class=" icon fas fa-arrow-right"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: Eco Hero Challenge -->
+        <div class="recycle-card" data-aos="fade-left">
+            <div class="row g-0 align-items-center">
+
+                <!-- LEFT: Text -->
+                <div class="col-md-8 eco-body order-md-1 order-2">
+                    <p>
+                        Earn your Eco Hero badge by adding what you have done to revitalize parks.
+                        Participate in challenges and track your eco-actions!
+                    </p>
+
+                    <ul class="features-list">
+
+                        <li>Track your Eco-friendly action for the park</li>
+                        <li>Future plans of eco-friendly action to make parks revatilize are allowed</li>
+                        <li>Earn digital Eco Hero Badge</li>
+                        <li>Compete with friends and family on leaderboards</li>
+                    </ul>
+
+                    <div class="row text-center eco-stats my-3">
+                        <div class="col">
+                            <h4 class="fw-bold text-success">100%</h4>
+                            <small>Forever active events, No NEED to worry about the Time limit for the event.</small>
+                        </div>
+                        <div class="col">
+                            <h4 class="fw-bold text-success">🏅</h4>
+                            <small>Earn Eco-hero badge</small>
+                        </div>
+                    </div>
+                     <a href="Pages/action_tracker.html" class="recycle-io-button text-decoration-none">Start Your journey<i class=" icon fas fa-arrow-right"></i></a>
+
+                    
+                </div>
+
+                <!-- RIGHT: Image -->
+                <div class="col-md-4 eco-left order-md-2 order-1 text-center">
+                    <h3 class="fw-bold text-dark"><i class="fas fa-calendar-alt"></i> Eco Hero Challenge</h3>
+                    <img src="image2/eco-tracker-event.png"alt="Eco Challenge" class="img-fluid mt-3">
+                   
+                   
+                </div>   
+             </div>
+        </div>
+
+    
+    
+    
+    
+    </div>
+
+      <!-- footer -->
+    <div class="footer-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
+          <path d="M0,80 C240,20 480,140 720,80 C960,20 1200,140 1440,80 V140 H0 Z"></path>
+        </svg>
+    </div>
+
+    
+    <footer class="footer-wave" >
+        <div class="container">
+
+            <div class="row">
+                <div class=" col-md-4 footer-wave__content ms-0" >
+                    <img src="image4/logo.png" alt="logo" id="footer_log" class="mb-3" class="mb-3" style="height: 40px;">
+                    <p class="text-md-start fs-5">
+                        Don't wait for change - Be the change. <br>
+                        Start recycling, reducing waste to protect our Park
+                        <b>Together with Green_sovereign</b>
+                    </p>
+                    <div class="row">
+                        <div class="col-6">
+                           <button class="btn" id="footer_btn"><a href="Pages/ecopage.html" class="text-decoration-none text-dark">Go GreenTech</a></button>
+                        </div>
+
+                        <div class="col-6">
+                           <button class="btn" id="footer_btn"><a href="Pages/info_page1.html" class="text-decoration-none text-dark">Learn Eco Tips</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="footer-wave__links">
+                    <div class="row">
+                        <div class="col-6">
+                            <h3 class="footer-wave__heading"> Quick Link</h3>
+                         <ul>
+                           <li class="mb-3"><a href="index.html">Home</a></li>
+                           <li class="mb-3" ><a href="Pages/about_us.html">About Us</a></li>
+                           <li class="mb-3" ><a href="Pages/info_page1.html">Eco-Friendly Habits</a></li>
+                           <li class="mb-3"><a href="Pages/ecopage.html">Green Technology</a></li>
+                           <li class="mb-3" ><a href="Pages/recycling.html">Recycling Tips</a></li>
+                    
+                         </ul>
+                        </div>
+
+                        <div class="col-6">
+                            <h3 class="footer-wave__heading">User Menu</h3>
+                           <ul>
+                               <li class="mb-3"><a href="Pages/signup.html">Sign in</a></li>
+                               <li class="mb-3"><a href="Pages/login.html">Log In</a></li>
+                               <li class="mb-3"><a href="Pages/game.html">Games</a></li>
+                               <li class="mb-3"><a href="Pages/action_tracker.html">Action_tracker</a></li>
+                           </ul>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                <div class="card col-md-4 border-0 shadow-sm" id="footer_address">
+                            <div class="card-body ">
+                                <h2 class="text-uppercase"><b>Address</b></h2>
+                                <p class="fs-6 text-dark mb-2">
+                                    No.242,Maha Bandula Road, Lanmadaw Township
+                                    <br>Yangon,Myanmar
+                                </p>
+                                <div class="row mt-3">
+                                    <ul>
+                                       <li class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-envelope-fill fs-5"></i>
+                                        <a href="" class="text-decoration-none text-dark">GreenSq_Sovereign.com</a>
+                                       </li>
+                                       <li class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-telephone-fill fs-5"></i>
+                                        <span class="text-dark">+95 9224887436</span>
+                                       </li>
+                                       <li class="d-flex align-items-center">
+                                        <i class="bi bi-telephone-fill fs-5"></i>
+                                        <span class="text-dark">+1 4978607951</span>
+                                       </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                                
+                </div>
+            </div>
+            <div class="footer-wave__bottom">
+                <div class="row">
+                   <div class="col-md-6">
+                     <p class="footer-wave__copyright"><b>&copy; Copyright 2026 All Rights Reserved. Developed by Sangria Green Sovereign</b></p>
+                   </div>
+                   <div class="col-6 text-center text-md-end" id="footer_icon">    
+                            <a href="https://www.facebook.com" class="text-dark me-4">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com" class="text-dark me-4">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://www.tiktok.com" class="text-dark me-4">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+                        
+                
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </footer>
+
+
+    
+
+<script>
+      AOS.init();
+</script>
+
+  
+
+ 
+
+</body>
+
+</html>

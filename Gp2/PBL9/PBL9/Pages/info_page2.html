@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Friendly Personal Habits</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="icon" href="../image4\logo.png" type="favicon">
+    <link rel="stylesheet" href="../css/info_page2.css">
+</head>
+<body>
+    
+    	 <!--Nav-->
+    <input type="checkbox" id="menu-toggle-checkbox">
+    
+    <nav class="navbar">
+        <div class="left-nav-group" >
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <!-- Using a placeholder image since "image4/logo.png" might not exist -->
+                <img src="../image4/logo.png" alt="Green Sovereign"  style="height: 60px; ">
+                <span style="margin-top: 0;">Green Sovereign</span>
+            </a>
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links" >
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="#">Eco-Habit<i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../info_page1.html">Nature</a></li>
+                    <li><a href="info_page2.html">EF</a></li>
+                    <li><a href="benefits.html">Benefits</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Green-Tech<i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="ecopage.html">Overview</a></li>
+                    <li><a href="SLES.html">SLES</a></li>
+                    <li><a href="WWMT.html">W & WMT</a></li>
+                </ul>
+            </li>
+            <li><a href="recycling.html">Recycling</a></li>
+            <div class="icon-links">
+                <a href="game.html"><i class="fa-solid fa-gamepad"></i></a>
+                <a href="action_tracker.html"><i class="fa-regular fa-calendar"></i></a>
+            </div>
+        </ul>
+
+        <!-- Mobile Menu Toggle Button -->
+        <label for="menu-toggle-checkbox" class="menu-toggle">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </label>
+    </nav>
+    <!-- Off-canvas Overlay -->
+    <label for="menu-toggle-checkbox" class="offcanvas-overlay"></label>
+    <!-- Off-canvas Sidebar for Mobile -->
+    <div class="offcanvas-sidebar">
+        <label for="menu-toggle-checkbox" class="sidebar-close">
+            <i class="fas fa-times"></i>
+        </label>
+        
+        <div class="sidebar-logo">
+            <img src="../image4/logo.png" alt="Green Sovereign" style="height: 35px;">
+            <span>Green Sovereign</span>
+        </div>
+        
+        <ul class="sidebar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            
+            <li>
+                <input type="checkbox" id="mobile-dropdown-1" class="mobile-dropdown-checkbox">
+                <label for="mobile-dropdown-1" class="sidebar-dropdown-label">
+                    Eco-Friendly Habits <i class="fa-solid fa-caret-down"></i>
+                </label>
+                <ul class="sidebar-dropdown-menu">
+                    <li><a href="info_page1.html">Respecting Nature</a></li>
+                    <li><a href="info_page2.html">EF Habits</a></li>
+                    <li><a href="benefits.html">Benefits</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <input type="checkbox" id="mobile-dropdown-2" class="mobile-dropdown-checkbox">
+                <label for="mobile-dropdown-2" class="sidebar-dropdown-label">
+                    Green Technology <i class="fa-solid fa-caret-down"></i>
+                </label>
+                <ul class="sidebar-dropdown-menu">
+                    <li><a href="ecopage.html">Overview</a></li>
+                    <li><a href="SLES.html">SLES</a></li>
+                    <li><a href="WWMT.html">W & WMT</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="recycling.html">Recycling Tips</a></li>
+            
+            <!-- Mobile version of icon links with text -->
+            <li class="sidebar-icon-links-mobile">
+                <a href="game.html"><i class="fa-solid fa-gamepad"></i> Game</a>
+                <a href="action_tracker.html"><i class="fa-regular fa-calendar"></i> Action Tracker</a>
+            </li>
+        </ul>
+        
+    </div>
+   <!-- End of Nav --> 
+
+    <div class="container-card" style=" margin-top: 100px;">
+        <header class="header">
+            <h1 class="header-title">
+                Eco-Friendly Personal Habits
+            </h1>
+            <p class="header-subtitle">
+                Bringing reusables, saving travel energy, and park stewardship.
+            </p>
+        </header>
+
+        <section class="summary-section">
+            <h2 class="section-title">Summary: Be a Park Steward</h2>
+            <div class="summary-content">
+                <p class="summary-text">
+                    Ensure your personal habits support a sustainable park environment. Minimize park waste by bringing your own reusable items (bottles, containers) and meticulously taking all trash with you when you leave the picnic area or trail. This simple action prevents litter from polluting the natural landscape, protects wildlife from ingesting harmful materials, and reduces the workload on park staff. Remember the principle: Take only pictures, leave only footprints.
+                    <br><br>
+                    Reduce air pollution by saving energy in your travel choices, prioritizing walking, biking, or public transit to access the park. Transportation is a significant source of urban emissions; choosing sustainable methods directly improves the air quality for park visitors and the surrounding community. Finally, actively engage in park stewardship by joining local community clean-ups to help keep the park beautiful and litter-free, strengthening your connection to the environment.
+                </p>
+                <div class="image-placeholder summary-image">
+                    <img src="../image1/img2.png" alt="summary_img">
+                </div>
+            </div>
+        </section>
+
+        <div class="grid-layout">
+            <div class="quick-tips-container">
+                <h2 class="section-title">Quick Eco-Tips</h2>
+                <div class="image-placeholder tips-image">
+                    <img src="../image1/img3.png" alt="tips_img">
+                </div>
+                <ul class="tip-list">
+                    <li>Use park bins for waste, or pack it out.</li>
+                    <li>Refill your water bottle at the park fountain.</li>
+                    <li>Bring your lunch in a reusable container for a park picnic.</li>
+                    <li>Walk, bike, or use transit to visit the park.</li>
+                    <li>Tidy up your picnic area completely.</li>
+                    <li>Join a "Friends of the Park" clean-up event.</li>
+                    <li>Recycle glass and plastic bottles at the park's stations.</li>
+                    <li>Turn off lights if you are using a park facility (like a restroom).</li>
+                </ul>
+            </div>
+
+            <div class="waste-impact-card">
+                <h2 class="section-title">Minimize Your Waste Impact</h2>
+                <p class="card-text">
+                    Minimize your waste impact during your park visit by embracing a "Zero-Waste Picnic" approach. Always bring a reusable water bottle and packed food in durable containers to avoid disposable wrappers and plastic bags. By eliminating single-use plastics, you directly reduce the amount of waste that ends up in landfills or, worse, polluting the park's natural habitats.
+                    <br><br>
+                    When you are finished, meticulously "pack out" anything you "packed in." This means all food scraps, wrappers, and even small tissues should leave the park with you, or be properly placed in designated recycling and waste bins. Furthermore, save energy by thinking about your journey: walk, cycle, or take a bus to the park entrance instead of driving. These choices reduce traffic congestion, improve the park's air quality, and lessen your overall carbon footprint for the day.
+                </p>
+                <div class="image-placeholder waste-image">
+                    <img src="../image1/img1.png" alt="waste_img">
+                </div>
+            </div>
+        </div>
+
+        <section class="random-tip-section">
+            <h3 class="header-title">Need a Quick Reminder?</h3>
+            <button id="tip-button" class="btn-random">Get a Random Green Action</button>
+            <p id="random-tip-output" class="random-tip-output">Click the button above for a quick tip!</p>
+        </section>
+    </div>
+
+       <!-- footer -->
+    <div class="footer-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
+          <path d="M0,80 C240,20 480,140 720,80 C960,20 1200,140 1440,80 V140 H0 Z"></path>
+        </svg>
+    </div>
+
+    
+    <footer class="footer-wave" >
+        <div class="container">
+
+            <div class="row">
+                <div class=" col-md-4 footer-wave__content ms-0" >
+                    <img src="../image4/logo.png" alt="logo" id="footer_log" class="mb-3" class="mb-3" style="height: 40px;">
+                    <p class="text-md-start fs-5">
+                        Don't wait for change - Be the change. <br>
+                        Start recycling, reducing waste to protect our Park
+                        <b>Together with Green_sovereign</b>
+                    </p>
+                    <div class="row">
+                        <div class="col-6">
+                           <button class="btn" id="footer_btn"><a href="ecopage.html" class="text-decoration-none text-dark">Go GreenTech</a></button>
+                        </div>
+
+                        <div class="col-6">
+                           <button class="btn" id="footer_btn"><a href="info_page1.html" class="text-decoration-none text-dark">Learn Eco Tips</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="footer-wave__links">
+                    <div class="row">
+                        <div class="col-6">
+                            <h3 class="footer-wave__heading"> Quick Link</h3>
+                         <ul>
+                           <li class="mb-3"><a href="../index.html">Home</a></li>
+                           <li class="mb-3" ><a href="about_us.html">About Us</a></li>
+                           <li class="mb-3" ><a href="info_page1.html">Eco-Friendly Habits</a></li>
+                           <li class="mb-3"><a href="ecopage.html">Green Technology</a></li>
+                           <li class="mb-3" ><a href="recycling.html">Recycling Tips</a></li>
+                    
+                         </ul>
+                        </div>
+
+                        <div class="col-6">
+                            <h3 class="footer-wave__heading">User Menu</h3>
+                           <ul>
+                               <li class="mb-3"><a href="signup.html">Sign in</a></li>
+                               <li class="mb-3"><a href="login.html">Log In</a></li>
+                               <li class="mb-3"><a href="game.html">Games</a></li>
+                               <li class="mb-3"><a href="action_tracker.html">Action_tracker</a></li>
+                           </ul>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                <div class="card col-md-4 border-0 shadow-sm" id="footer_address">
+                            <div class="card-body ">
+                                <h2 class="text-uppercase"><b>Address</b></h2>
+                                <p class="fs-6 text-dark mb-2">
+                                    No.242,Maha Bandula Road, Lanmadaw Township
+                                    <br>Yangon,Myanmar
+                                </p>
+                                <div class="row mt-3">
+                                    <ul>
+                                       <li class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-envelope-fill fs-5"></i>
+                                        <a href="" class="text-decoration-none text-dark">GreenSq_Sovereign.com</a>
+                                       </li>
+                                       <li class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-telephone-fill fs-5"></i>
+                                        <span class="text-dark">+95 9224887436</span>
+                                       </li>
+                                       <li class="d-flex align-items-center">
+                                        <i class="bi bi-telephone-fill fs-5"></i>
+                                        <span class="text-dark">+1 4978607951</span>
+                                       </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                                
+                </div>
+            </div>
+            <div class="footer-wave__bottom">
+                <div class="row">
+                   <div class="col-md-6">
+                     <p class="footer-wave__copyright"><b>&copy; Copyright 2026 All Rights Reserved. Developed by Sangria Green Sovereign</b></p>
+                   </div>
+                   <div class="col-6 text-center text-md-end" id="footer_icon">    
+                            <a href="https://www.facebook.com" class="text-dark me-4">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com" class="text-dark me-4">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://www.tiktok.com" class="text-dark me-4">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+                        
+                
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </footer>
+  
+
+    <script src="../JS/script1.js"></script>
+</body>
+</html>
